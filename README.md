@@ -173,6 +173,75 @@ npm run real-demo
 - Shows live monitoring of transaction lifecycle
 - Demonstrates real cross-chain message detection
 
+### Interactive Frontend Demo
+
+Experience the Porto Superchain Extension through a modern web interface showcasing real-world portfolio management scenarios.
+
+#### Features
+- **Portfolio Management**: Visualize assets across 4 Superchain L2s (OP, Base, Unichain, World Chain)
+- **Real-time Monitoring**: Watch cross-chain transactions and message lifecycle
+- **Interactive Rebalancing**: Simulate optimizing a $10,000 portfolio for better yields
+- **Session Key Management**: Experience "one permission, multiple chains" UX
+
+#### Quick Start
+
+```bash
+# Navigate to the demo directory
+cd demo
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+#### Demo Flow
+
+1. **Permission Setup** - EIP-7702 delegation and session key authorization
+2. **Portfolio Dashboard** - View current distribution and optimization opportunities
+3. **Cross-Chain Operations** - Monitor 6 simultaneous rebalancing operations
+4. **Results View** - See the improved APY and annual gains
+
+#### Demo Data
+
+The frontend simulates a realistic portfolio scenario:
+
+**Before Optimization:**
+- OP Mainnet: $4,500 (45%) - Mixed DeFi positions
+- Base: $3,000 (30%) - Liquidity provision and lending
+- Unichain: $1,500 (15%) - UNI staking and LP
+- World Chain: $1,000 (10%) - WLD staking and identity yields
+- **Current APY**: 5.9%
+
+**After Rebalancing:**
+- Balanced 25% across all chains
+- **Optimized APY**: 7.3% (+1.4% improvement)
+- **Annual Gain**: +$1,400 projected
+
+#### Customization
+
+You can modify the demo scenarios by editing:
+- `demo/lib/mockData.ts` - Portfolio data and rebalancing operations
+- `demo/lib/chains.ts` - Supported chains and protocols
+- `demo/components/` - Individual demo components
+
+#### Development Setup (Optional)
+
+For enhanced features, install additional dependencies:
+
+```bash
+cd demo
+npm install framer-motion lucide-react recharts
+```
+
+This enables:
+- Smooth animations (Framer Motion)
+- Professional icons (Lucide React)  
+- Advanced charts (Recharts)
+
 ## 🔧 Core Components
 
 ### PortoCrossChainProvider (Enhanced)
