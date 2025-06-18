@@ -5,7 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "tsx src/examples/crossChainDemo.ts",
-    "real-demo": "tsx src/examples/realCrossChainDemo.ts"
+    "real-demo": "tsx src/examples/realCrossChainDemo.ts",
+    "swap-bridge-swap": "tsx src/examples/swapBridgeSwapDemo.ts",
+    "deploy": "tsx src/scripts/deployProduction.ts",
+    "deploy:mainnet": "tsx src/scripts/deployProduction.ts --mainnet",
+    "deploy:supersim": "tsx src/scripts/deploySupersim.ts",
+    "demo:supersim": "tsx src/examples/swapBridgeSwapSupersim.ts",
+    "demo:interop": "tsx src/examples/interopDemo.ts",
+    "demo:simple-interop": "tsx src/examples/simpleInteropDemo.ts",
+    "demo:chained": "tsx src/examples/chainedTransactionsDemo.ts",
+    "demo:single-approval": "tsx src/examples/singleApprovalDemo.ts"
   },
   "keywords": [],
   "author": "",
